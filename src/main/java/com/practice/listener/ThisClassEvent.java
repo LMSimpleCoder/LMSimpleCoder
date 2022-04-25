@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * @author luoming
+ */
 public class ThisClassEvent extends JFrame implements ActionListener {
 
     JButton btn;

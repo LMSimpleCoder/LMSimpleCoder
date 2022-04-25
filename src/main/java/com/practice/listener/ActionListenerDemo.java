@@ -1,5 +1,7 @@
 package com.practice.listener;
 
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
 public class ActionListenerDemo {
@@ -7,24 +9,24 @@ public class ActionListenerDemo {
 
     public static void main(String[] args) {
 
-        JFrame f = new JFrame();			//´´½¨´°Ìå
-        JPanel p = new JPanel();			//´´½¨Ãæ°å
-        JButton btn = new JButton("µãÎÒ");	//´´½¨Ò»¸ö°´Å¥
+        JFrame f = new JFrame();			//åˆ›å»ºçª—ä½“
+        JPanel p = new JPanel();			//åˆ›å»ºé¢æ¿
+        JButton btn = new JButton("ç‚¹æˆ‘");	//åˆ›å»ºä¸€ä¸ªæŒ‰é’®
 
-        //Íâ²¿ÀàµÄÊµÏÖ
+        //å¤–éƒ¨ç±»çš„å®ç°
 
-        //´´½¨¼àÌıÆ÷ActionListener
-        //new ActionListener();´íÎó£¬½Ó¿Ú²»ÄÜnew
-        //´´½¨ÊµÏÖ×ÓÀàInterfaceDemo
-        listener.InterfaceDemo a = new listener.InterfaceDemo();
-        //½«¼àÌıÆ÷InterfaceDemo°ó¶¨µ½btn°´Å¥ÉÏ
+        //åˆ›å»ºç›‘å¬å™¨ActionListener
+        //new ActionListener();é”™è¯¯ï¼Œæ¥å£ä¸èƒ½new
+        //åˆ›å»ºå®ç°å­ç±»InterfaceDemo
+        ActionListener a = new InterfaceDemo();
+        //å°†ç›‘å¬å™¨InterfaceDemoç»‘å®šåˆ°btnæŒ‰é’®ä¸Š
         btn.addActionListener(a);
 
-        p.add(btn);							//½«°´Å¥Ìí¼Óµ½Ãæ°åÖĞ
-        f.add(p);							//½«Ãæ°åÌí¼Óµ½´°ÌåÖĞ
+        p.add(btn);							//å°†æŒ‰é’®æ·»åŠ åˆ°é¢æ¿ä¸­
+        f.add(p);							//å°†é¢æ¿æ·»åŠ åˆ°çª—ä½“ä¸­
 
-        f.setSize(400,300);					//ÉèÖÃ´°ÌåµÄ´óĞ¡
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//ÉèÖÃ¹Ø±Õ´°ÌåµÄºóÌ¨
-        f.setVisible(true);					//ÉèÖÃ´°Ìå¿É¼û
+        f.setSize(400,300);					//è®¾ç½®çª—ä½“çš„å¤§å°
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//è®¾ç½®å…³é—­çª—ä½“çš„åå°
+        f.setVisible(true);					//è®¾ç½®çª—ä½“å¯è§
     }
 }

@@ -18,6 +18,9 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 
 
+/**
+ * @author luoming
+ */
 public class CipherFile {
 
     /**

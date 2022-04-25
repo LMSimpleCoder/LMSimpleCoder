@@ -1,6 +1,8 @@
 package com.practice.observer;
 
-//具体观察者类：老师事件监听器
+/**
+ * 具体观察者类：老师事件监听器
+ */
 class TeachEventListener implements BellEventListener {
     @Override
     public void heardBell(RingEvent e) {
